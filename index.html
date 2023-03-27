@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>estacionamento
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <img src="vip-removebg-preview.png" width="100px" height="100px">
+        </center>
+        <div class="input-field">
+            <input type="text" id="input1" placeholder="Placa" maxlength="8">
+            <label>Placa do carro:</label>
+        </div>
+
+        <div class="input-field">
+            <input type="text" id="input2" placeholder="Modelo">
+            <label>Modelo do carro:</label>
+        </div>
+
+        <div class="input-field">
+            <input type="number" id="codigo" placeholder="Código">
+            <label>Código de Modelo:</label>
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col"> Modelo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">01</th>
+                    <td id="sub">Subcompacto</td>
+                </tr>
+                <tr>
+                    <th scope="row">02</th>
+                    <td id="comp">compacto</td>
+                </tr>
+                <tr>
+                    <th scope="row">03</th>
+                    <td id="hat">hatch</td>
+                </tr>
+                <tr>
+                    <th scope="row">04</th>
+                    <td id="sed">Sedan</td>
+                </tr>
+                <tr>
+                    <th scope="row">05</th>
+                    <td id="SUV">SUV</td>
+                </tr>
+                <tr>
+                    <th scope="row">06</th>
+                    <td id="Pick">Pick-Up</td>
+                </tr>
+            </tbody>
+        </table>
+
+           
+        <div class="input-field">
+            <input type="number" id="tempo" placeholder="Tempo" maxlength="1">
+            <label>Tempo a permanecer:</label>
+        </div>
+
+
+        <div class="result">
+            <button onclick="estacionamento()">estacionamento</button>
+            <button onclick="novocad()">Novo Cadastro</button>
+        </div>
+        <span id="resultado"></span>
+    
+    
+</body>
+
+</html>
